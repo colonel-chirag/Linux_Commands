@@ -23,5 +23,45 @@ CRUD stands for Create, Read, Update, and Delete. CRUD operations are said to be
 ![image](https://user-images.githubusercontent.com/59536110/177052341-77c0ea0f-4759-425f-9971-e8cc577c1325.png)
 ![image](https://user-images.githubusercontent.com/59536110/177052362-0ad1bb2e-fb46-493a-a8e0-8e4d8c38368c.png)
 ![image](https://user-images.githubusercontent.com/59536110/177052399-d6a87e97-4fb7-4279-86ed-538f57955f83.png)
+The diagram shows that there are 3 types of people accessing a file and they are:
+
+User (u)
+Group (g)
+Others (o)
+Also, the access that we want to give to each of them is of three types:
+
+Read (r)
+Write (w)
+Execute (x)
+So, each of them can have 0 or more out of these 3 permissions. Now let us understand the Linux commands that help us give these permissions to the files.
+One important thing to note here is that before these 9 slots of the user, group and others (read, write and execute permissions), there is also one another slot. This slot is for special files. For instance, if you something as drwxr--r--, here ‘d’ shows that it is a directory of which you are viewing the permissions. Further, rwx means that the user has all the three permissions where as r-- means that the group has only read permission and the write and execute permissions are not there with the group. The same is the case for others (another r--).
+
+The chmod Command:
+Before we jump into the Linux file permission commands and see some examples, it is very important to understand this chmod command in detail first as understanding this command completely will clear the entire concept of file permission commands. The chmod command stands for “change-mode” which means that using this command, we can change the mode in which some user is able to access the file. This command is used to change the file permissions. The syntax can be either using symbols (characters) or numbers. We will see that in detail.
+
+Symbolic Method for granting permissions:
+This is the first method of chmod command using which we can give permissions. The basic syntax is as follows:
+
+chmod [ugoa…][-+=]perms…[,....] FILE….
+
+Let us understand this syntax in detail.
+
+The first set means the type of person to give access to. Here:
+
+u → Stands for User
+g → Stands for Group
+o → Stands for Others
+a → Stands for All the users i.e. instead of writing ugo, we can just write a.
+If the user's flag is not included in the command i.e. we do not mention for which kind of people out of u, g and o, are we changing the permissions for, by default, it takes a i.e. all the users.
+
+The second set is the set of operators. Let us see what they mean.
+
+- → removes the mentioned permission
++ → adds the mentioned permission
+= → Changes the current permission to the mentioned permission. IF no permission is mentioned after using the = operator, all the permissions from the mentioned class are removed.
+The perms stand for permission and ‘,’ is used to separate different permissions. Let us now see the Linux commands using the symbolic notation of chmod.
+
+
+![image](https://user-images.githubusercontent.com/59536110/177052754-663fec2b-21d1-4ff4-af1d-808fc33447d2.png)
 
 
