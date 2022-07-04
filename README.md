@@ -89,4 +89,4 @@ Explanation: We have already studied that if we do not mention u/g/o then by def
 ![image](https://user-images.githubusercontent.com/59536110/177192582-b9ccd8dc-8361-4bfe-891f-55c2f361888d.png)
 ![image](https://user-images.githubusercontent.com/59536110/177192630-9fb278a2-9de7-4f8f-b46e-dfcc7d0295e1.png)
 ![image](https://user-images.githubusercontent.com/59536110/177192682-9f696283-9fd1-4980-be1f-64a34f65e2b0.png)
-
+![image](https://user-images.githubusercontent.com/59536110/177192859-cd668ea4-b34a-47c1-8291-d34d42b95c8e.png)
