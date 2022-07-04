@@ -63,5 +63,30 @@ The perms stand for permission and ‘,’ is used to separate different permiss
 
 
 ![image](https://user-images.githubusercontent.com/59536110/177052754-663fec2b-21d1-4ff4-af1d-808fc33447d2.png)
+Numerical Method for granting file permissions
+There are numeric codes for each permission. They are as follows:
 
+r (read) = 4
+w (write) = 2
+x (execute) = 1
+No permissions  = 0
+The permissions number of a specific user class is represented by the sum of the values of all the permissions. For instance, if the user has read and executed permissions, but not the write permission, then the permissions number for the user will be read (4) + execute(1) = 5.
+
+For instance, if we have to write a command to provide read and write permissions to the user, group and others, there can be many ways of doing so. Let us see one symbolic way:
+
+Symbolic Way
+$ chmod ugo+rw file1.txt
+
+We can write this in a numeric way as shown below:
+
+Numeric Way
+$ chmod 666 file1.txt
+
+Explanation: We have already studied that if we do not mention u/g/o then by default the permissions are applied to all. Also, read + write = 4 + 2  = 6. We have written 6 thrice because of applying the permissions to user, group and others. So, read and write permissions are applied to the user, group and others (666) for the file file1.txt.
+
+![image](https://user-images.githubusercontent.com/59536110/177192202-7a5904ee-5d16-4ce8-9e0c-ea6c82847760.png)
+![image](https://user-images.githubusercontent.com/59536110/177192532-82093e18-f48e-49d4-8798-fe81e32acb1f.png)
+![image](https://user-images.githubusercontent.com/59536110/177192582-b9ccd8dc-8361-4bfe-891f-55c2f361888d.png)
+![image](https://user-images.githubusercontent.com/59536110/177192630-9fb278a2-9de7-4f8f-b46e-dfcc7d0295e1.png)
+![image](https://user-images.githubusercontent.com/59536110/177192682-9f696283-9fd1-4980-be1f-64a34f65e2b0.png)
 
